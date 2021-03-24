@@ -13,11 +13,11 @@
                 <div class="card-body">
                     <div class="row">
                         <div style="font-size: 16px;" class="col-md-10 offset-md-1">
-                            <p>Last modified: March 15, {{ date('Y') }}</p>
+                            <p>Last modified: March 15, 2021</p>
 
                             <h4 class="font-weight-semibold">Introduction</h4>
 
-                            <p>{{ $app_name }} ("We") respects your privacy and is committed to protecting it through our compliance with this policy.</p>
+                            <p>{{ config('app.name') }} ("We") respects your privacy and is committed to protecting it through our compliance with this policy.</p>
 
                             <p>This policy describes the types of information we may collect from you or that you may provide when you visit the website
                                 <a target="_blank" href="{{ $app_url }}">{{ $app_url }}</a> (our "Website") and our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>

@@ -13,11 +13,11 @@
                     <div class="card-body">
                         <div class="row">
                             <div style="font-size: 16px;" class="col-md-10 offset-md-1">
-                                <p>Last modified: March 15, {{ date('Y') }}</p>
+                                <p>Last modified: March 15, 2021</p>
 
                                 <h4 class="font-weight-semibold">Acceptance of the Terms of Use</h4>
 
-                                <p>These terms of use are entered into by and between You and {{ $app_name }} ("we" or "us"). The following terms and conditions and all documents incorporated by reference (collectively, "Terms of Use"), govern your access to and use of <a target="_blank" href="{{ $app_url }}">{{ $app_url }}</a>, including any content, functionality and services offered on or through <a target="_blank" href="{{ $app_url }}">{{ $app_url }}</a> (the "Website").</p>
+                                <p>These terms of use are entered into by and between You and {{ config('app.name') }} ("we" or "us"). The following terms and conditions and all documents incorporated by reference (collectively, "Terms of Use"), govern your access to and use of <a target="_blank" href="{{ $app_url }}">{{ $app_url }}</a>, including any content, functionality and services offered on or through <a target="_blank" href="{{ $app_url }}">{{ $app_url }}</a> (the "Website").</p>
 
                                 <p>Please read the Terms of Use carefully before you start to use the Website. By using the Website, you accept and agree to be bound and abide by these Terms of Use and our Privacy Policy, found at <a target="_blank" href="{{ route('privacy_policy') }}">{{ route('privacy_policy') }}</a>, incorporated herein by reference. If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Website.</p>
 
@@ -54,7 +54,7 @@
 
                                 <h4 class="font-weight-semibold">Trademarks</h4>
 
-                                <p>The {{ $app_name }} name and all related names, logos, slogans, mottos, and designs are trademarks of ours or our affiliates or licensors. You must not use such marks without our prior written permission. All other names, logos, product and service names, designs and slogans on this Website are the trademarks of their respective owners.</p>
+                                <p>The {{ config('app.name') }} name and all related names, logos, slogans, mottos, and designs are trademarks of ours or our affiliates or licensors. You must not use such marks without our prior written permission. All other names, logos, product and service names, designs and slogans on this Website are the trademarks of their respective owners.</p>
 
                                 <h4 class="font-weight-semibold">Prohibited Uses</h4>
 
@@ -77,7 +77,7 @@
                                     <li>Introduce any viruses, Trojan horses, worms, logic bombs or other material which is malicious or technologically harmful.</li>
                                     <li>Attempt to gain unauthorized access to, interfere with, damage or disrupt any parts of the Website, the server on which the Website is stored, or any server, computer or database connected to the Website.</li>
                                     <li>Attack the Website via a denial-of-service attack or a distributed denial-of-service attack.</li>
-                                    <li>Use the Website in any manner that violates any applicable {{ $app_name }} policy, rule, or procedure.</li>
+                                    <li>Use the Website in any manner that violates any applicable {{ config('app.name') }} policy, rule, or procedure.</li>
                                     <li>Use the Website in any manner that contravenes Catholic Mercy tradition, faith, and morals or the legacy of Catholic Mercy education.</li>
                                     <li>Otherwise attempt to interfere with the proper working of the Website.</li>
                                 </ul>
@@ -114,7 +114,7 @@
 
                                <p> Without limiting the foregoing, we have the right to fully cooperate with any law enforcement authorities or court order requesting or directing us to disclose the identity or other information of anyone posting any materials on or through the Website.</p>
 
-                                <p>YOU WAIVE AND HOLD HARMLESS {{ strtoupper($app_name) }} FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY {{ strtoupper($app_name) }} DURING OR AS A RESULT OF ITS INVESTIGATIONS AND FROM ANY ACTIONS TAKEN AS A CONSEQUENCE OF INVESTIGATIONS BY {{ strtoupper($app_name) }} OR LAW ENFORCEMENT AUTHORITIES.</p>
+                                <p>YOU WAIVE AND HOLD HARMLESS {{ strtoupper(config('app.name')) }} FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY {{ strtoupper(config('app.name')) }} DURING OR AS A RESULT OF ITS INVESTIGATIONS AND FROM ANY ACTIONS TAKEN AS A CONSEQUENCE OF INVESTIGATIONS BY {{ strtoupper(config('app.name')) }} OR LAW ENFORCEMENT AUTHORITIES.</p>
 
                                 <p>However, we do not undertake to review all material before it is posted on the Website, and cannot ensure prompt removal of objectionable material after it has been posted. Accordingly, we assume no liability for any action or inaction regarding transmissions, communications, or content provided by any user or third party. We have no liability or responsibility to anyone for performance or nonperformance of the activities described in this section.</p>
 
@@ -169,21 +169,21 @@
 
                                 <p>You understand that we cannot and do not guarantee or warrant that files available for downloading from the internet or the Website will be free of viruses or other destructive code. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for anti-virus protection and accuracy of data input and output, and for maintaining a means external to our site for any reconstruction of any lost data. WE WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY A DISTRIBUTED DENIAL-OF-SERVICE ATTACK, VIRUSES OR OTHER TECHNOLOGICALLY HARMFUL MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS, DATA OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE WEBSITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE OR TO YOUR DOWNLOADING OF ANY MATERIAL POSTED ON IT, OR ON ANY WEBSITE LINKED TO IT.</p>
 
-                                <p>YOUR USE OF THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE IS AT YOUR OWN RISK. THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER {{ strtoupper($app_name) }} NOR ANY PERSON ASSOCIATED WITH {{ strtoupper($app_name) }} MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY OR AVAILABILITY OF THE WEBSITE. WITHOUT LIMITING THE FOREGOING, NEITHER {{ strtoupper($app_name) }} NOR ANYONE ASSOCIATED WITH {{ strtoupper($app_name) }} REPRESENTS OR WARRANTS THAT THE WEBSITE, ITS CONTENT OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL BE ACCURATE, RELIABLE, ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE WEBSITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.</p>
+                                <p>YOUR USE OF THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE IS AT YOUR OWN RISK. THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER {{ strtoupper(config('app.name')) }} NOR ANY PERSON ASSOCIATED WITH {{ strtoupper(config('app.name')) }} MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY OR AVAILABILITY OF THE WEBSITE. WITHOUT LIMITING THE FOREGOING, NEITHER {{ strtoupper(config('app.name')) }} NOR ANYONE ASSOCIATED WITH {{ strtoupper(config('app.name')) }} REPRESENTS OR WARRANTS THAT THE WEBSITE, ITS CONTENT OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL BE ACCURATE, RELIABLE, ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE WEBSITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.</p>
 
-                                <p>{{ strtoupper($app_name) }} HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF NON-INFRINGEMENT.</p>
+                                <p>{{ strtoupper(config('app.name')) }} HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF NON-INFRINGEMENT.</p>
 
                                 <p>THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</p>
 
                                 <h4 class="font-weight-semibold">Limitation on Liability</h4>
 
-                                <p>IN NO EVENT WILL {{ strtoupper($app_name) }}, ITS AFFILIATES OR THEIR LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE WEBSITE, ANY WEBSITES LINKED TO IT, ANY CONTENT ON THE WEBSITE OR SUCH OTHER WEBSITES OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE OR SUCH OTHER WEBSITES, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, PAIN AND SUFFERING, EMOTIONAL DISTRESS, LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS OR ANTICIPATED SAVINGS, LOSS OF USE, LOSS OF GOODWILL, LOSS OF DATA, AND WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT OR OTHERWISE, EVEN IF FORESEEABLE.</p>
+                                <p>IN NO EVENT WILL {{ strtoupper(config('app.name')) }}, ITS AFFILIATES OR THEIR LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE WEBSITE, ANY WEBSITES LINKED TO IT, ANY CONTENT ON THE WEBSITE OR SUCH OTHER WEBSITES OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE OR SUCH OTHER WEBSITES, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, PAIN AND SUFFERING, EMOTIONAL DISTRESS, LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS OR ANTICIPATED SAVINGS, LOSS OF USE, LOSS OF GOODWILL, LOSS OF DATA, AND WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT OR OTHERWISE, EVEN IF FORESEEABLE.</p>
 
                                 <p>THE FOREGOING DOES NOT AFFECT ANY LIABILITY WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</p>
 
                                 <h4 class="font-weight-semibold">Indemnification</h4>
 
-                                <p>You agree to defend, indemnify and hold harmless {{ $app_name }}, its affiliates, licensors and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms of Use or your use of the Website, including, but not limited to, your User Contributions, any use of the Website's content, services and products other than as expressly authorized in these Terms of Use or your use of any information obtained from the Website.</p>
+                                <p>You agree to defend, indemnify and hold harmless {{ config('app.name') }}, its affiliates, licensors and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms of Use or your use of the Website, including, but not limited to, your User Contributions, any use of the Website's content, services and products other than as expressly authorized in these Terms of Use or your use of any information obtained from the Website.</p>
 
                                 <h4 class="font-weight-semibold">Governing Law and Jurisdiction</h4>
 
@@ -193,7 +193,7 @@
 
                                 <h4 class="font-weight-semibold">Arbitration</h4>
 
-                                <p>At {{ $app_name }}’s sole discretion, it may require You to submit any disputes arising from the use of these Terms of Use or the Website, including disputes arising from or concerning their interpretation, violation, invalidity, non-performance, or termination, to final and binding arbitration under the Arbitration and Concilliation Act of Nigeria</p>
+                                <p>At {{ config('app.name') }}’s sole discretion, it may require You to submit any disputes arising from the use of these Terms of Use or the Website, including disputes arising from or concerning their interpretation, violation, invalidity, non-performance, or termination, to final and binding arbitration under the Arbitration and Concilliation Act of Nigeria</p>
 
                                 <h4 class="font-weight-semibold">Limitation on Time to File Claims</h4>
 
@@ -201,18 +201,18 @@
 
                                 <h4 class="font-weight-semibold">Waiver and Severability</h4>
 
-                                <p>No waiver of by {{ $app_name }} of any term or condition set forth in these Terms of Use shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of {{ $app_name }} to assert a right or provision under these Terms of Use shall not constitute a waiver of such right or provision.</p>
+                                <p>No waiver of by {{ config('app.name') }} of any term or condition set forth in these Terms of Use shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of {{ config('app.name') }} to assert a right or provision under these Terms of Use shall not constitute a waiver of such right or provision.</p>
 
                                 <p>If any provision of these Terms of Use is held by a court or other tribunal of competent jurisdiction to be invalid, illegal or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of the Terms of Use will continue in full force and effect.</p>
 
                                 <h4 class="font-weight-semibold">Entire Agreement</h4>
 
-                                <p>These Terms of Use and our <a target="_blank" href="{{ route('privacy_policy') }}">Privacy Policy</a> constitute the sole and entire agreement between you and {{ $app_name }} with respect to the Website and supersede all prior and contemporaneous understandings, agreements, representations and warranties, both written and oral, with respect to the Website.</p>
+                                <p>These Terms of Use and our <a target="_blank" href="{{ route('privacy_policy') }}">Privacy Policy</a> constitute the sole and entire agreement between you and {{ config('app.name') }} with respect to the Website and supersede all prior and contemporaneous understandings, agreements, representations and warranties, both written and oral, with respect to the Website.</p>
 
                                 <h5 class="font-weight-semibold">Your Comments and Concerns</h5>
                                 <p>If you do have any comments or concerns regarding but not limited to these Terms of Use. Please contact us.</p>
 
-                                <p>This website is operated by {{ $app_name }}.</p>
+                                <p>This website is operated by {{ config('app.name') }}.</p>
 
                                 <p>All other feedback, comments, requests for technical support and other communications relating to the Website should be directed to the School Administrator. Please call {{ $contact_phone }}</p>
                             </div>
