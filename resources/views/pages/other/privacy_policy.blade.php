@@ -20,7 +20,7 @@
                             <p>{{ config('app.name') }} ("We") respects your privacy and is committed to protecting it through our compliance with this policy.</p>
 
                             <p>This policy describes the types of information we may collect from you or that you may provide when you visit the website
-                                <a target="_blank" href="{{ $app_url }}">{{ $app_url }}</a> (our "Website") and our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>
+                                {{-- <a target="_blank" href=//"{{ $app_url }}">{{ $app_url }}//</a> (our "Website") and our practices for collecting, using, maintaining, protecting, and disclosing that information.</p> --}}
 
                             <p>This policy applies to information we collect:</p>
 
