@@ -16,7 +16,7 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label font-weight-semibold">Name of School <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
-                                <input name="system_name" value="{{ config('app.name') }}"  type="text" class="form-control" placeholder="Name of School">
+                                <input name="system_name" value="{{ $s['system_name'] }}"  type="text" class="form-control" placeholder="Name of School">
                             </div>
                         </div>
                         <div class="form-group row">
