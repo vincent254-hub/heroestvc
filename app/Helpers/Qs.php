@@ -26,7 +26,7 @@ class Qs
 
     public static function getAppCode()
     {
-        return 'QS';
+        return 'HC';
     }
 
     public static function getDefaultUserImage()

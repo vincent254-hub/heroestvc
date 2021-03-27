@@ -19,16 +19,16 @@ class MyClassesTableSeeder extends Seeder
         $ct = ClassType::pluck('id')->all();
 
         $data = [
-            ['name' => 'Nursery 1', 'class_type_id' => $ct[2]],
-            ['name' => 'Nursery 2', 'class_type_id' => $ct[2]],
-            ['name' => 'Nursery 3', 'class_type_id' => $ct[2]],
-            ['name' => 'Primary 1', 'class_type_id' => $ct[3]],
-            ['name' => 'Primary 2', 'class_type_id' => $ct[3]],
-            ['name' => 'JSS 2', 'class_type_id' => $ct[4]],
-            ['name' => 'JSS 3', 'class_type_id' => $ct[4]],
-            ['name' => 'SSS 1', 'class_type_id' => $ct[5]],
-            ['name' => 'SSS 2', 'class_type_id' => $ct[5]],
-            ['name' => 'SSS 3', 'class_type_id' => $ct[5]],
+            ['name' => 'Engineering', 'class_type_id' => $ct[2]],
+            ['name' => 'Building Technology', 'class_type_id' => $ct[2]],
+            ['name' => 'Beauty Therapy', 'class_type_id' => $ct[2]],
+            ['name' => 'Information Technology', 'class_type_id' => $ct[3]],
+            ['name' => 'Hospitality', 'class_type_id' => $ct[3]],
+            ['name' => 'Plumbing', 'class_type_id' => $ct[4]],
+            ['name' => 'Welding', 'class_type_id' => $ct[4]],
+            ['name' => 'Human Resource', 'class_type_id' => $ct[5]],
+            ['name' => 'ATD', 'class_type_id' => $ct[5]],
+            ['name' => 'Business Management', 'class_type_id' => $ct[5]],
             ];
 
         DB::table('my_classes')->insert($data);

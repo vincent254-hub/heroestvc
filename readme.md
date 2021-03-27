@@ -104,7 +104,7 @@ Your Contributions & suggestions are welcomed.
 
 ### **Security Vulnerabilities**
 
-If you discover a security vulnerability within LAVSMS, please use pull request. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within HEROESTVC, please use pull request. All security vulnerabilities will be promptly addressed.
 
 ### **Contact [Vincent Inc.]**
 - Phone : +254707865319
