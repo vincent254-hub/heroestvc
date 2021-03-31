@@ -15,6 +15,13 @@
     <div class="collapse navbar-collapse" id="navbar-mobile">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
+                <a href="{{ ('./sendemail') }}" class="navbar-nav-link">
+                    <i class="icon-envelope"></i>
+                    <span class="d-md-none ml-2">Mail</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
                 <a href="{{ route('home') }}" class="navbar-nav-link">
                     <i class="icon-home"></i>
                     <span class="d-md-none ml-2">Home</span>

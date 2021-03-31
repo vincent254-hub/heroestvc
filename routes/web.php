@@ -170,3 +170,8 @@ Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(
     Route::get('/my_children', 'MyController@children')->name('my_children');
 
 });
+
+// email sending
+Route::get('/sendemail', 'SendEmailController@index');
+Route::post('/sendemail/send', 'SendEmailController@send');
+Route::get('/sendemail', 'SendEmailController@index')->name('show');
