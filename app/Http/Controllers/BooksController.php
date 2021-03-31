@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\SendMail;
 
-class SendEmailController extends Controller
+class BooksController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +13,7 @@ class SendEmailController extends Controller
      */
     public function index()
     {
-        return view('send_email');
+        //
     }
 
     /**
@@ -23,32 +21,9 @@ class SendEmailController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    function send(Request $request)
+    public function create()
     {
-     $this->validate($request, [
-      'name'     =>  'required',
-      'email'  =>  'required|email',
-      'message' =>  'required'
-     ]);
-
-        $data = array(
-            'name'      =>  $request->name,
-            'message'   =>   $request->message
-        );
-
-     Mail::to('vincentkhamala9@yahoo.com')->send(new SendMail($data));
-     return back()->with('success', 'Thanks for contacting Heroes college 
-     we will get back to you as soon as possible! Stay safe covid is real');
-
-    //  sending mails to many users in background
-
-    // require auth guard
-
-    //  Mail::to($request->user('vincentkhamala9@yahoo.com'))->cc($moreUsers)->bcc($evenMoreUsers)->send(new SendMail($data))->queue(new SendMail($data));
-    //  return back()->with('success', 'Thanks for contacting Heroes college 
-    //  we will get back to you as soon as possible! Stay safe covid is real');
-     
-
+        //
     }
 
     /**
@@ -107,5 +82,3 @@ class SendEmailController extends Controller
         //
     }
 }
-
-  
